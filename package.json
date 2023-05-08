@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/alhajjkhalid/portfolio/issues"
   },
-  "homepage": "https://github.com/alhajjkhalid/portfolio#readme",
-  "devDependencies": {
-    "tailwindcss": "^3.3.2"
-  }
+  "homepage": "https://github.com/alhajjkhalid/portfolio#readme"
 }
