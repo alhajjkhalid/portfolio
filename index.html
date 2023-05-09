@@ -12,6 +12,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -19,6 +24,10 @@
       tailwind.config = {
         theme: {
           extend: {
+            fontFamily: {
+              heading: ["Poppins", "sans-serif"],
+              body: ["Roboto", "sans-serif"],
+            },
             colors: {
               clifford: "#da373d",
             },
@@ -33,6 +42,13 @@
     <title>Document</title>
   </head>
   <body class="bg-theme text-theme">
+    <div
+      id="preloader"
+      class="fixed inset-0 w-full h-full z-50 bg-white flex items-center justify-center"
+    >
+      <div class="loader"></div>
+    </div>
+
     <nav
       class="navbar nav-theme bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-50"
     >
@@ -122,10 +138,10 @@
           alt="Khalid Alhajj"
           class="w-64 h-64 mb-6 mx-auto transform hover:scale-110 transition-all duration-300"
         />
-        <h1 class="text-5xl font-bold mb-6">
+        <h1 class="text-5xl font-bold mb-6 font-heading">
           <span id="typed-name"></span>
         </h1>
-        <p class="text-xl">Web Developer | Automation | Logistics</p>
+        <p class="text-xl font-body">Web Developer | Automation | Logistics</p>
       </div>
     </div>
 
@@ -142,18 +158,18 @@
             </div>
           </div>
           <div class="w-full md:w-1/2 px-4" data-aos="fade-left">
-            <h2 class="text-4xl font-bold mb-4">About Me</h2>
-            <p class="text-xl text-gray-700 mb-4">
+            <h2 class="text-4xl font-bold mb-4 font-heading">About Me</h2>
+            <p class="text-xl text-gray-700 mb-4 font-body">
               Hi! I'm Khalid Alhajj, a dedicated Full Stack Web Developer with a
               background in operations management and logistics, passionate
               about creating innovative and user-friendly web applications.
             </p>
-            <p class="text-xl text-gray-700 mb-4">
+            <p class="text-xl text-gray-700 mb-4 font-body">
               Skilled in HTML, CSS, JavaScript, React, Node.js, SQL, and
               MongoDB, I apply the efficiency, adaptability, and innovation
               gained from my diverse experience to excel in coding projects.
             </p>
-            <p class="text-xl text-gray-700 mb-4">
+            <p class="text-xl text-gray-700 mb-4 font-body">
               As a graduate of an Intensive Web-Development Bootcamp, I'm
               committed to blending my technical acumen with my operational
               expertise to deliver exceptional web solutions that exceed client
@@ -170,28 +186,32 @@
     </section>
     <section id="services" class="bg-gray-100 py-12">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-12">Services</h2>
+        <h2 class="text-4xl font-bold text-center mb-12 font-heading">
+          Services
+        </h2>
         <div class="flex flex-wrap items-center justify-center">
           <div class="w-full md:w-1/2 px-4" data-aos="fade-right">
             <div class="mb-6">
-              <h3 class="text-2xl font-bold mb-2">Web Development</h3>
-              <p class="text-xl text-gray-700">
+              <h3 class="text-2xl font-bold mb-2 font-heading">
+                Web Development
+              </h3>
+              <p class="text-xl text-gray-700 font-body">
                 I create responsive, fast-loading, and user-friendly websites
                 using modern web technologies like HTML5, CSS3, JavaScript,
                 React, and more.
               </p>
             </div>
             <div class="mb-6">
-              <h3 class="text-2xl font-bold mb-2">Web Design</h3>
-              <p class="text-xl text-gray-700">
+              <h3 class="text-2xl font-bold mb-2 font-heading">Web Design</h3>
+              <p class="text-xl text-gray-700 font-body">
                 I design visually appealing and engaging websites that deliver a
                 great user experience and adhere to the latest design trends and
                 guidelines.
               </p>
             </div>
             <div class="mb-6">
-              <h3 class="text-2xl font-bold mb-2">Consulting</h3>
-              <p class="text-xl text-gray-700">
+              <h3 class="text-2xl font-bold mb-2 font-heading">Consulting</h3>
+              <p class="text-xl text-gray-700 font-body">
                 Leveraging over 6 years of operations management and a passion
                 for technology, I offer consulting services to help businesses
                 optimize processes and implement cutting-edge solutions for
@@ -213,11 +233,15 @@
     </section>
     <section id="portfolio" class="bg-white py-12" data-aos="slide-up">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-12">Work Portfolio</h2>
+        <h2 class="text-4xl font-bold text-center mb-12 font-heading">
+          Work Portfolio
+        </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
           <div class="bg-gray-100 p-6 rounded-lg">
-            <h3 class="text-2xl font-bold mb-4 text-center">Memory Game</h3>
-            <p class="text-xl text-gray-700 mb-4">
+            <h3 class="text-2xl font-bold mb-4 text-center font-heading">
+              Memory Game
+            </h3>
+            <p class="text-xl text-gray-700 mb-4 font-body">
               Created an engaging Pink Floyd-inspired memory card game,
               celebrating the iconic band's imagery and legacy.
             </p>
@@ -226,8 +250,10 @@
             >
           </div>
           <div class="bg-gray-100 p-6 rounded-lg">
-            <h3 class="text-2xl font-bold mb-4 text-center">Reddit Clone</h3>
-            <p class="text-xl text-gray-700 mb-4">
+            <h3 class="text-2xl font-bold mb-4 text-center font-heading">
+              Reddit Clone
+            </h3>
+            <p class="text-xl text-gray-700 mb-4 font-body">
               Developed a Reddit clone, replicating core features and user
               experience for an alternative community platform.
             </p>
@@ -236,8 +262,10 @@
             >
           </div>
           <div class="bg-gray-100 p-6 rounded-lg">
-            <h3 class="text-2xl font-bold mb-4 text-center">MateFinder</h3>
-            <p class="text-xl text-gray-700 mb-4">
+            <h3 class="text-2xl font-bold mb-4 text-center font-heading">
+              MateFinder
+            </h3>
+            <p class="text-xl text-gray-700 mb-4 font-body">
               Designed a platform connecting people with former classmates,
               rekindling friendships and shared school memories.
             </p>
@@ -251,7 +279,9 @@
 
     <section id="contact" class="bg-gray-100 py-12" data-aos="slide-up">
       <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-center mb-12">Contact Me</h2>
+        <h2 class="text-4xl font-bold text-center mb-12 font-heading">
+          Contact Me
+        </h2>
         <form
           action="https://formspree.io/f/mnqywkqr"
           method="POST"
@@ -369,6 +399,18 @@
       document.addEventListener("DOMContentLoaded", () => {
         AOS.init();
       });
+    </script>
+    <script>
+      document.onreadystatechange = function () {
+        if (document.readyState === "complete") {
+          const preloader = document.getElementById("preloader");
+          preloader.style.opacity = 0;
+          preloader.style.visibility = "hidden";
+          setTimeout(() => {
+            preloader.style.display = "none";
+          }, 500);
+        }
+      };
     </script>
   </body>
 </html>
