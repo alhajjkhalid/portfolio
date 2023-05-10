@@ -171,32 +171,37 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
             </div>
           </div>
           <div class="w-full md:w-1/2 px-4" data-aos="fade-left">
-            <h2 class="text-4xl font-bold mb-4 font-heading">About Me</h2>
+            <div class="relative">
+              <h2 class="text-4xl font-bold mb-4 font-heading z-10 relative">About Me</h2>
+              <div class="absolute top-0 left-0 w-1/4 h-1 bg-green-500 rounded py-2"></div>
+            </div>
             <p class="text-xl text-gray-700 mb-4 font-body">
               Hi! I'm Khalid Alhajj, a dedicated Full Stack Web Developer with a
               background in operations management and logistics, passionate
               about creating innovative and user-friendly web applications.
             </p>
-            <p class="text-xl text-gray-700 mb-4 font-body">
-              Skilled in HTML, CSS, JavaScript, React, Node.js, SQL, and
-              MongoDB, I apply the efficiency, adaptability, and innovation
-              gained from my diverse experience to excel in coding projects.
-            </p>
-            <p class="text-xl text-gray-700 mb-4 font-body">
-              As a graduate of an Intensive Web-Development Bootcamp, I'm
-              committed to blending my technical acumen with my operational
-              expertise to deliver exceptional web solutions that exceed client
-              expectations.
-            </p>
-            <a
-              href="#contact"
-              class="bg-green-500 text-white font-semibold py-3 px-6 rounded-lg mt-4 inline-block hover:bg-green-600 transition-all duration-300"
-              >Contact Me</a
-            >
+            <ul class="list-disc list-inside text-xl text-gray-700 mb-4 font-body">
+              <li>Skilled in HTML, CSS, JavaScript, React, Node.js, SQL, and MongoDB.</li>
+              <li>Efficient, adaptable, and innovative from diverse experience.</li>
+              <li>Graduate of an Intensive Web-Development Bootcamp.</li>
+            </ul>
+            <div class="flex items-center space-x-4">
+              <a
+                href="#contact"
+                class="bg-green-500 text-white font-semibold py-3 px-6 rounded-lg hover:bg-green-600 transition-all duration-300"
+                >Contact Me</a
+              >
+              <a
+                href="./images/Khalid Alhajj CV.pdf"
+                class="text-green-500 border border-green-500 font-semibold py-3 px-6 rounded-lg hover:bg-green-100 transition-all duration-300"
+                >Download Resume</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
+    
 
     <section id="services" class="bg-gray-100 pb-12">
       <svg
@@ -277,7 +282,7 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
           Work Portfolio
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
-          <div class="bg-gray-100 p-6 rounded-lg">
+          <div class="bg-gray-100 p-6 rounded-lg drop-shadow-lg">
             <h3 class="text-2xl font-bold mb-4 text-center font-heading">
               Memory Game
             </h3>
@@ -297,7 +302,7 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
               >View Project</a
             >
           </div>
-          <div class="bg-gray-100 p-6 rounded-lg">
+          <div class="bg-gray-100 p-6 rounded-lg drop-shadow-lg">
             <h3 class="text-2xl font-bold mb-4 text-center font-heading">
               Reddit Clone
             </h3>
@@ -316,7 +321,7 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
               >View Project</a
             >
           </div>
-          <div class="bg-gray-100 p-6 rounded-lg">
+          <div class="bg-gray-100 p-6 rounded-lg drop-shadow-lg">
             <h3 class="text-2xl font-bold mb-4 text-center font-heading">
               MateFinder
             </h3>
@@ -376,7 +381,7 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
             <div class="w-full">
               <label class="block mb-2" for="name">Name</label>
               <input
-                class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline"
+                class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline shadow-md"
                 id="name"
                 type="text"
                 name="name"
@@ -388,7 +393,7 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
             <div class="w-full">
               <label class="block mb-2" for="email">Email</label>
               <input
-                class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline"
+                class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline shadow-md"
                 id="email"
                 type="email"
                 name="_replyto"
@@ -400,7 +405,7 @@ https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
             <div class="w-full">
               <label class="block mb-2" for="message">Message</label>
               <textarea
-                class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline"
+                class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline shadow-md"
                 id="message"
                 name="message"
                 rows="4"
