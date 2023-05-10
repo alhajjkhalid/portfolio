@@ -20,14 +20,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  const themeToggler = document.getElementById("theme-toggler");
-
-  themeToggler.addEventListener("click", () => {
-    const currentTheme = document.documentElement.getAttribute("data-theme");
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-    document.documentElement.setAttribute("data-theme", newTheme);
-  });
-
   AOS.init();
 
   document.onreadystatechange = function () {
@@ -59,4 +51,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
-
