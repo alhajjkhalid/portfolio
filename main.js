@@ -51,3 +51,27 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarToggle = document.querySelector(
+    "[data-collapse-toggle='navbar-default']"
+  );
+  const navbar = document.getElementById("navbar-default");
+
+  navbarToggle.addEventListener("click", function (event) {
+    event.stopPropagation();
+    navbar.classList.toggle("hidden");
+    navbar.classList.toggle("block");
+  });
+
+  document.addEventListener("click", function () {
+    if (!navbar.classList.contains("hidden")) {
+      navbar.classList.add("hidden");
+      navbar.classList.remove("block");
+    }
+  });
+
+  navbar.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+});
